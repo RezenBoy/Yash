@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khushi Enterprises - Wholesale Dog & Cat Accessories</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="logo">
@@ -26,22 +27,21 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>Welcome to Khushi Enterprises</h2>
-            <p>Bulk Dog & Cat Accessories at the Best Prices</p>
+            <p>Bulk Dog & Cat Accessories at the Best Wholesale Prices</p>
             <button class="cta-btn" onclick="scrollToSection('products')">View Products</button>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2>About Us</h2>
             <p class="about-intro">
-                Khushi Enterprises is your premier destination for wholesale dog and cat accessories. 
-                We specialize in supplying high-quality collars, leashes, beds, toys, grooming tools, and more in bulk to 
+                Khushi Enterprises is your premier destination for wholesale dog and cat accessories.
+                We specialize in supplying high-quality collars, leashes, beds, toys, grooming tools, and more in bulk
+                to
                 retailers, pet shops, and online pet businesses across India.
             </p>
             <div class="about-features">
@@ -64,76 +64,24 @@
         </div>
     </section>
 
-    <!-- Products Section -->
     <section id="products" class="products">
         <div class="container">
             <h2>Our Products</h2>
             <p class="products-subtitle">Wholesale accessories for dogs and cats</p>
             <div class="filter-buttons">
                 <button class="filter-btn active" data-category="all">All Products</button>
-                <button class="filter-btn" data-category="dog">Dog Accessories</button>
-                <button class="filter-btn" data-category="cat">Cat Accessories</button>
-                <button class="filter-btn" data-category="toys">Toys</button>
+                <button class="filter-btn" data-category="collar">Collars & Leashes</button>
+                <button class="filter-btn" data-category="bed">Beds</button>
+                <button class="filter-btn" data-category="bowl">Bowls & Feeders</button>
+                <button class="filter-btn" data-category="toy">Toys</button>
+                <button class="filter-btn" data-category="other">Other Accessories</button>
             </div>
-            <div class="products-grid">
-                <!-- Dog Accessories -->
-                <div class="product-card" data-category="dog">
-                    <div class="product-image">🐕‍🦺</div>
-                    <span class="wholesale-badge">Wholesale Only</span>
-                    <h3>Premium Dog Collar & Leash Set</h3>
-                    <p>Durable, comfortable sets available in multiple sizes and colors for all dog breeds.</p>
-                </div>
-                <div class="product-card" data-category="dog">
-                    <div class="product-image">🦴</div>
-                    <span class="wholesale-badge">Wholesale Only</span>
-                    <h3>Dog Harness Collection</h3>
-                    <p>Adjustable no-pull harnesses designed for comfort and control.</p>
-                </div>
-                <div class="product-card" data-category="dog">
-                    <div class="product-image">🛏️</div>
-                    <span class="wholesale-badge">Wholesale Only</span>
-                    <h3>Orthopedic Dog Beds</h3>
-                    <p>Soft, washable beds ideal for medium to large breeds.</p>
-                </div>
-
-                <!-- Cat Accessories -->
-                <div class="product-card" data-category="cat">
-                    <div class="product-image">🐈</div>
-                    <span class="wholesale-badge">Wholesale Only</span>
-                    <h3>Cat Scratching Posts</h3>
-                    <p>Sturdy posts to keep cats entertained and protect furniture.</p>
-                </div>
-                <div class="product-card" data-category="cat">
-                    <div class="product-image">🪤</div>
-                    <span class="wholesale-badge">Wholesale Only</span>
-                    <h3>Cat Litter Trays & Mats</h3>
-                    <p>Easy-to-clean trays and non-slip mats for neat litter areas.</p>
-                </div>
-                <div class="product-card" data-category="cat">
-                    <div class="product-image">😺</div>
-                    <span class="wholesale-badge">Wholesale Only</span>
-                    <h3>Cat Collars with Bells</h3>
-                    <p>Lightweight, adjustable collars in fun designs and colors.</p>
-                </div>
-
-                <!-- Toys (Dog & Cat) -->
-                <div class="product-card" data-category="toys">
-                    <div class="product-image">🎾</div>
-                    <span class="wholesale-badge">Wholesale Only</span>
-                    <h3>Dog Chew Toys Pack</h3>
-                    <p>Mixed set of chew toys designed to promote healthy teeth and reduce boredom.</p>
-                </div>
-                <div class="product-card" data-category="toys">
-                    <div class="product-image">🧶</div>
-                    <span class="wholesale-badge">Wholesale Only</span>
-                    <h3>Cat Toy Combo Set</h3>
-                    <p>Includes teaser wands, balls, and plush toys for active indoor cats.</p>
-                </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically loaded here -->
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
@@ -146,7 +94,6 @@
                     </div>
                     <div class="info-item">
                         <strong>Phone:</strong>
-                        <p>+91-9811368649</p>
                         <p>+91-9811368649</p>
                     </div>
                     <div class="info-item">
@@ -176,7 +123,8 @@
                             <input type="tel" id="phone" name="phone" placeholder="Your Phone *" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message *" required></textarea>
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message *"
+                                required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
                         <div id="formMessage" class="form-message"></div>
@@ -186,7 +134,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; <span id="year"></span> Khushi Enterprises. All rights reserved.</p>
@@ -198,7 +145,7 @@
             </div>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
+
 </html>
